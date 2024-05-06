@@ -53,7 +53,7 @@ export const updateItem = (id, newAmount) => (dispatch) => {
                 payload: res.data,
             });
 
-            toast.info(`Ürünün miktarı arttırıldı (${newAmount})`);
+            toast.info(`Ürünün miktarı güncellendi (${newAmount})`);
         })
         // c) istek başarısız olursa bildirim gönder
         .catch(() => toast.error('Üzgünüz bir sorun oluştu'));
